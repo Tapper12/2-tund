@@ -3,11 +3,16 @@
 
   var Moosipurk = function(){
 
-    console.log=('Moosipurgi sees');
+    //SINGLETON PATTERN (4 rida)
+    if(Moosipurk.instance){
+      return Moosipurk.instance;
+    }
+    Moosipurk.instance = this;//This viitab moosipurgile
+
+    console.log("Moosipurgi sees");
   };
 
   window.onload = function(){
-    var app = new Moosipurk();
 
   };
 
