@@ -13,6 +13,10 @@
     console.log(this);
     //console.log('moosipurgi sees');
     //Stardin rakenduse
+
+    //Kõik muutujad, mis on üldised ja muudetavad siin
+    this.click_count = 0;
+
     this.init();
   };
 
@@ -32,7 +36,9 @@
     },
     addNewClick: function(event){
 
-      console.log(event);
+      //console.log(event);
+      this.click_count++;
+      console.log(this.click_count);
     }
   };
 
